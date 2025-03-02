@@ -1,0 +1,87 @@
+html {
+    margin-top: 0;
+    margin-bottom: 0; /* how to get rid of white on top and bottom of nav bar?? */
+}
+
+body {
+    margin: 0;
+}
+
+/* -------------NAVIGATION BAR STYLING --------------*/
+.navbar {
+    background-color: #f8eed7;
+    font-family: 'DM Serif Display';
+    text-align: center;
+}
+
+/* style for unordered list in navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+/* style for list item in navbar */
+.navbar li {
+    margin: 1rem;
+}
+
+/* style for navbar links */
+.navbar a {
+    color: #394b3c;
+    text-decoration: none;
+}
+
+/* -----------------BANNER STYLING ------------------*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("golden gate bridge.jpg");
+    background-size: cover;
+}
+
+.banner h1 {
+    color:#f8eed7;
+    font-size: 5rem;
+    font-family: 'DM Serif Display';
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+}
+
+.banner h2 {
+    color: #f8eed7;
+    font-size: 1.5rem;
+    font-family: 'DM Serif Display';
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #f8eed7;
+    margin-left: 1.5rem;
+}
+
+/* -------------ABOUT PAGE STYLING --------------*/
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8eed7;
+    display: flex;
+}
+
+
+/*
+Questions:
+1. in styles.css day2, recommended rem cuz it adjusts relative to user's font size. how do u know when to use rem vs px?
+2. at a certain point when the page gets skinny enough, only the navbar colored banner shrinks (part of "contact" is off)
+3. white thing on top of navbar
+4. _blank in html for icons but still opens in same tab
+*/
