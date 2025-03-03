@@ -1,8 +1,3 @@
-html {
-    margin-top: 0;
-    margin-bottom: 0; /* how to get rid of white on top and bottom of nav bar?? */
-}
-
 body {
     margin: 0;
 }
@@ -12,6 +7,7 @@ body {
     background-color: #f8eed7;
     font-family: 'DM Serif Display';
     text-align: center;
+    margin: 0;
 }
 
 /* style for unordered list in navbar */
@@ -71,12 +67,99 @@ body {
 
 /* -------------ABOUT PAGE STYLING --------------*/
 .about {
-    width: 100%;
-    height: 100vh;
+    height: 73vh;
     background-color: #f8eed7;
     display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
+.about img {
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    font-family: 'Roboto Mono';
+    font-size: 1rem;
+    color: #394b3c;
+    line-height: 1.5rem;
+}
+
+.resume-button {
+    background-color: #394b3c;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    margin-top: 1.3rem;
+
+    font-family: 'Roboto Mono';
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #f8eed7;
+    box-shadow: none;
+}
+
+.resume-button:hover {
+    background-color: #bbc0ce;
+    border-color: #bbc0ce;
+    color: #394b3c;
+    box-shadow: none;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details h2 {
+    font-family: 'DM Serif Display';
+    font-weight: lighter;
+    color: #394b3c;
+    margin-bottom: 0rem;
+}
+
+.profile-details h1 {
+    font-family: 'DM Serif Display';
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: #394b3c;
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+}
+
+.profile-details p {
+    font-family: 'Roboto Mono';
+    color: #394b3c;
+}
+
+hr {
+    border: 0.5px solid #394b3c;
+    margin: 0;
+}
+
+/* -------------EXPERIENCE PAGE STYLING --------------*/
+.experience {
+    height: 75vh;
+    background-color: #394b3c;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 
 /*
 Questions:
@@ -84,4 +167,13 @@ Questions:
 2. at a certain point when the page gets skinny enough, only the navbar colored banner shrinks (part of "contact" is off)
 3. white thing on top of navbar
 4. _blank in html for icons but still opens in same tab
+5. get rid of shadow on button
+*/
+
+/*
+TO DO:
+1. make navbar go up when you scroll down, and show up when you scroll up
+2. experience page with timeline of stuff + photos
+3. projects page with links to github thing
+4. contacts page with basic contact info links
 */
